@@ -6,8 +6,12 @@ $(document).ready (function () {
     url: '/data.json',
     success: display
   })
+  $('.js_add').on('blur', function () {
+    var data = $(this).val()
+    var container = $('#' + $(this).data('ref'))
+    insertData(container, [data])
+  })
 })
-
 
 function display (apiResponse) {
   var types = Object.keys(apiResponse)
@@ -25,8 +29,6 @@ var renderFuncs = {
   render_review: renderReview
 }
 
-
-
 function renderIdea (data) {
   var container = $('#ideas')
   insertData(container, data)
@@ -36,7 +38,6 @@ function renderProgress (data) {
   var container = $('#progress')
   insertData(container, data)
 }
-
 
 function renderApproved (data) {
   var container = $('#approved')
@@ -53,6 +54,3 @@ function insertData(container, data) {
     container.append(cardTemplate.replace('{{content}}', data[start]))
   }
 }
-
-
-
