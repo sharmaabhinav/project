@@ -1,0 +1,68 @@
+.header {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.11);
+}
+
+.font-black {
+  color: black;
+}
+
+.font-grey {
+  color: grey;
+}
+
+.font-22 {
+  font-size: 22px;
+}
+
+.action-bar{
+  height: 50px;
+  border-bottom: 2px solid rgba(128, 128, 128, 0.11);
+}
+
+.task-list-label {
+  text-transform: uppercase;
+  padding: 10px;
+  vertical-align: middle;
+  position: relative;
+  top:25%;
+}
+
+.background-orange{
+  background-color: orange;
+}
+.background-blue{
+  background-color: #4da6ff;
+}
+
+.background-green {
+  background-color: lightgreen;
+}
+.background-dark-blue{
+  background-color: darkblue;
+}
+
+.task-list {
+  color: white;
+  height: 45px;
+}
+
+.add-card {
+  margin-top: 10px;
+}
+
+.task-list-container {
+  margin-top: 15px;
+}
+
+
+.card {
+  background-color: #f2f2f2;
+  font-size: 15px;
+  padding: 4px;
+  margin-bottom: 10px;
+  word-wrap: break-word;
+  border-left: red 2px solid;
+}
